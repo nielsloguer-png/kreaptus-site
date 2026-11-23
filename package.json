@@ -1,0 +1,40 @@
+{
+  "name": "kreaptus-site",
+  "version": "1.0.0",
+  "description": "Site institucional da Kreaptus Arquitectura & Obras — Luanda, Angola. Visita 3D à casa guiada pelo scroll, esboços conceptuais, missão, visão, valores e parceiros.",
+  "private": true,
+  "author": "Kreaptus Arquitectura & Obras <kuendi@outlook.com>",
+  "homepage": "https://www.instagram.com/kuendiarquitetura/",
+  "scripts": {
+    "start": "serve . -l 5182",
+    "dev": "serve . -l 5182",
+    "preview": "serve . -l 5182"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  },
+  "kreaptus": {
+    "paginaPrincipal": "index.html",
+    "estilos": "style.css",
+    "script": "main.js",
+    "bibliotecasCDN": {
+      "gsap": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "scrollTrigger": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "lenis": "https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js",
+      "fontes": "Google Fonts — Inter Tight (títulos) e Manrope (texto)"
+    },
+    "visita3D": {
+      "frames": 481,
+      "pastaDesktop": "assets/walk/desktop",
+      "pastaMobile": "assets/walk/mobile",
+      "formato": "f0001.jpg … f0481.jpg"
+    },
+    "parceiros": "assets/parceiros (ver LEIA-ME.txt)",
+    "contactos": {
+      "telefone": ["+244 923 215 437", "+244 939 390 399"],
+      "email": "kuendi@outlook.com",
+      "instagram": "@kuendiarquitetura",
+      "morada": "Talatona, em frente ao Hotel Palmeira, Condomínio Maravilha — Casa 28, Luanda"
+    }
+  }
+}

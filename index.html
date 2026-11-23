@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kreaptus — Arquitectura &amp; Obras · Luanda</title>
+  <meta name="description" content="Kreaptus Arquitectura & Obras — projectar e construir espaços de alto padrão em Angola. Do traço à chave na mão.">
+  <meta name="theme-color" content="#0B0B12">
+  <link rel="icon" href="assets/img/kreaptus-simbolo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Michroma&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <img src="assets/img/kreaptus-simbolo.png" alt="" class="loader__mark">
+      <div class="loader__count"><span id="loadNum">0</span>%</div>
+    </div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#topo" class="nav__logo" aria-label="Kreaptus — início">
+      <img src="assets/img/kreaptus-logo-branco.png" alt="Kreaptus Arquitectura &amp; Obras">
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#quem-somos">Quem somos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#projectos">Projectos</a>
+      <a href="#identidade">Missão &amp; Valores</a>
+      <a href="#parceiros">Clientes</a>
+      <a href="#contactos">Contactos</a>
+    </nav>
+    <a href="#contactos" class="btn btn--lime nav__cta" data-magnetic>Marcar reunião</a>
+    <button class="nav__burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <nav class="menu__links">
+      <a href="#quem-somos"><i>01</i>Quem somos</a>
+      <a href="#servicos"><i>02</i>Serviços</a>
+      <a href="#projectos"><i>03</i>Projectos</a>
+      <a href="#metodologia"><i>04</i>Metodologia</a>
+      <a href="#identidade"><i>05</i>Missão &amp; Valores</a>
+      <a href="#parceiros"><i>06</i>Clientes</a>
+      <a href="#contactos"><i>07</i>Contactos</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="tel:+244923215437">+244 923 215 437</a>
+      <a href="mailto:kuendi@outlook.com">kuendi@outlook.com</a>
+    </div>
+  </div>
+
+  <main id="topo">
+
+    <!-- WALKTHROUGH: a casa em 3D, conduzida pelo scroll -->
+    <section class="walk" aria-label="Visita à casa" data-frames="481">
+      <div class="walk__sticky hero">
+        <img class="walk__poster" src="assets/walk/desktop/f0001.jpg" alt="Moradia contemporânea iluminada ao anoitecer">
+        <canvas class="walk__canvas" aria-hidden="true"></canvas>
+        <div class="walk__shade"></div>
+
+        <div class="walk__chapter is-active hero__content" data-from="0" data-to=".16">
+          <p class="eyebrow hero__eyebrow"><span class="dot"></span>Arquitectura &amp; Obras · Luanda, Angola</p>
+          <h1 class="hero__title">
+            <span class="line"><span>Exclusividade</span></span>
+            <span class="line"><span>não se anuncia,</span></span>
+            <span class="line"><span class="grad">reconhece-se.</span></span>
+          </h1>
+          <div class="hero__bottom">
+            <p class="hero__lead">Faça scroll e entre numa casa Kreaptus: do traço à chave na mão.</p>
+            <a href="#quem-somos" class="btn btn--ghost" data-magnetic>Saltar a visita <span class="arrow">↓</span></a>
+          </div>
+        </div>
+
+        <div class="walk__chapter walk__chapter--side" data-from=".2" data-to=".38">
+          <p class="eyebrow eyebrow--lime">01 · A chegada</p>
+          <h2 class="walk__title">Uma fachada que<br>se <em>reconhece</em>.</h2>
+          <p class="walk__text">Pedra, betão e luz desenhados para o clima e a realidade angolana.</p>
+        </div>
+        <div class="walk__chapter walk__chapter--side walk__chapter--right" data-from=".42" data-to=".58">
+          <p class="eyebrow eyebrow--lime">02 · A entrada</p>
+          <h2 class="walk__title">Cada espaço nasce<br>de uma <em>vida diferente</em>.</h2>
+          <p class="walk__text">Nunca repetimos um projecto. Desenhamos a vida de quem o habita.</p>
+        </div>
+        <div class="walk__chapter walk__chapter--side" data-from=".62" data-to=".78">
+          <p class="eyebrow eyebrow--lime">03 · A sala</p>
+          <h2 class="walk__title">Interiores que<br><em>respiram</em> identidade.</h2>
+          <p class="walk__text">Arquitectura, interiores, mobiliário e iluminação sob uma só coordenação.</p>
+        </div>
+        <div class="walk__chapter walk__chapter--end" data-from=".86" data-to="1.01">
+          <p class="eyebrow eyebrow--lime">04 · O terraço</p>
+          <h2 class="walk__title walk__title--big">Desenhamos o palco<br>do seu <em>dia a dia</em>.</h2>
+          <a href="#contactos" class="btn btn--lime" data-magnetic>Marcar reunião <span class="arrow">→</span></a>
+        </div>
+
+        <ol class="walk__rooms" aria-hidden="true">
+          <li data-at="0">Exterior</li>
+          <li data-at=".25">Entrada</li>
+          <li data-at=".5">Hall</li>
+          <li data-at=".72">Sala</li>
+          <li data-at=".92">Terraço</li>
+        </ol>
+        <div class="walk__bar"><span></span></div>
+        <div class="hero__scroll"><span>Scroll para entrar</span><i></i></div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Concebemos</span><b>✦</b><span>Executamos</span><b>✦</b><span>Entregamos</span><b>✦</b>
+        <span>Concebemos</span><b>✦</b><span>Executamos</span><b>✦</b><span>Entregamos</span><b>✦</b>
+        <span>Concebemos</span><b>✦</b><span>Executamos</span><b>✦</b><span>Entregamos</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- QUEM SOMOS -->
+    <section class="about section" id="quem-somos">
+      <div class="container about__grid">
+        <div class="about__text">
+          <p class="eyebrow reveal">01 — Quem somos</p>
+          <p class="about__big fill-text">A Kreaptus desenvolve projectos de arquitectura, design e construção de alto padrão, com uma visão clara: criar espaços sofisticados, funcionais e intemporais.</p>
+          <p class="about__body reveal">Cada projecto é pensado como extensão do estilo de vida e da posição de quem o habita. É desenhado à medida da realidade angolana e executado com rigor técnico, do traço à chave na mão.</p>
+          <div class="about__stats">
+            <div class="stat reveal"><strong>1</strong><span>único interlocutor</span></div>
+            <div class="stat reveal"><strong>4</strong><span>especialidades coordenadas</span></div>
+            <div class="stat reveal"><strong>0</strong><span>projectos repetidos</span></div>
+          </div>
+        </div>
+        <figure class="about__media clip-reveal" data-cursor="Kreaptus">
+          <img src="assets/img/moradia-dia.jpg" alt="Moradia contemporânea com ripado de madeira e betão aparente" class="parallax-img">
+        </figure>
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto">
+      <div class="manifesto__bg"><img src="assets/img/condominio-aereo.jpg" alt="" class="parallax-img"></div>
+      <div class="container manifesto__inner">
+        <p class="eyebrow eyebrow--lime reveal">Sofisticação silenciosa</p>
+        <h2 class="manifesto__title split-words">Um edifício não se mede em metros quadrados.</h2>
+        <p class="manifesto__sub reveal">Mede-se nas manhãs que ali se acordam, nos negócios que ali se fecham, na vida que ali cresce.</p>
+        <p class="manifesto__sign reveal">Na Kreaptus não desenhamos estruturas. <em>Desenhamos o palco do seu dia a dia.</em></p>
+      </div>
+    </section>
+
+    <!-- ÁREAS DE ACTUAÇÃO -->
+    <section class="areas section" id="servicos">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">02 — Áreas de actuação</p>
+          <h2 class="h2 split-lines">Um único interlocutor,<br><span class="grad">do traço à chave na mão.</span></h2>
+        </div>
+        <ul class="areas__list">
+          <li class="area" data-img="assets/img/moradia-dia.jpg">
+            <span class="area__n">01</span><h3>Arquitectura</h3><p>Projectos residenciais, corporativos e comerciais de alto padrão.</p><span class="area__go">↗</span>
+          </li>
+          <li class="area" data-img="assets/img/interior-sala.jpg">
+            <span class="area__n">02</span><h3>Design de interiores</h3><p>Interiores que respiram a identidade de quem os ocupa.</p><span class="area__go">↗</span>
+          </li>
+          <li class="area" data-img="assets/img/obra-betonagem.jpg">
+            <span class="area__n">03</span><h3>Construção civil</h3><p>Obra nova, ampliações e remodelações.</p><span class="area__go">↗</span>
+          </li>
+          <li class="area" data-img="assets/img/corporativo-torre.jpg">
+            <span class="area__n">04</span><h3>Licenciamento</h3><p>Processos tratados junto das entidades, sem dores de cabeça.</p><span class="area__go">↗</span>
+          </li>
+          <li class="area" data-img="assets/img/obra-arquitecto.jpg">
+            <span class="area__n">05</span><h3>Fiscalização de obra</h3><p>Controlo de qualidade, prazos e custos em estaleiro.</p><span class="area__go">↗</span>
+          </li>
+          <li class="area" data-img="assets/img/interior-reuniao.jpg">
+            <span class="area__n">06</span><h3>Consultoria técnica</h3><p>Estudos de viabilidade, orçamentação e apoio à decisão.</p><span class="area__go">↗</span>
+          </li>
+        </ul>
+      </div>
+      <div class="area-preview" aria-hidden="true"><img src="assets/img/moradia-dia.jpg" alt=""></div>
+    </section>
+
+    <!-- SERVIÇOS DETALHE -->
+    <section class="service section">
+      <div class="container service__grid">
+        <figure class="service__media clip-reveal">
+          <img src="assets/img/interior-cozinha.jpg" alt="Cozinha em mármore negro com iluminação linear" class="parallax-img">
+          <figcaption>Serviço 01</figcaption>
+        </figure>
+        <div class="service__text">
+          <p class="eyebrow reveal">Serviço 01</p>
+          <h2 class="h2 split-lines">Arquitectura e design orientados à exclusividade.</h2>
+          <p class="service__lead reveal">Do estudo prévio ao projecto de execução, desenhamos espaços sofisticados, funcionais e intemporais, pensados como extensão do estilo de vida de quem os habita.</p>
+          <ul class="checks">
+            <li class="reveal">Estudo prévio, anteprojecto e projecto de execução</li>
+            <li class="reveal">Arquitectura residencial e corporativa</li>
+            <li class="reveal">Design de interiores, mobiliário e iluminação</li>
+            <li class="reveal">Modelação 3D e imagens fotorrealistas do resultado final</li>
+            <li class="reveal">Especificação de materiais e acabamentos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container service__grid service__grid--rev">
+        <div class="service__text">
+          <p class="eyebrow reveal">Serviço 02</p>
+          <h2 class="h2 split-lines">Construção e acompanhamento de obra.</h2>
+          <p class="service__lead reveal">Executamos aquilo que desenhamos. A obra é conduzida com fidelidade absoluta ao que foi idealizado, com controlo permanente de qualidade, prazos e custos.</p>
+          <ul class="checks">
+            <li class="reveal">Construção de raiz, ampliações e remodelações</li>
+            <li class="reveal">Planeamento, cronograma físico-financeiro e orçamentação</li>
+            <li class="reveal">Direcção e fiscalização técnica de empreitada</li>
+            <li class="reveal">Gestão de fornecedores, materiais e subempreiteiros</li>
+            <li class="reveal">Entrega chave na mão, com vistoria e garantia</li>
+          </ul>
+        </div>
+        <figure class="service__media clip-reveal">
+          <img src="assets/img/obra-arquitecto.jpg" alt="Técnico da Kreaptus a analisar plantas em obra" class="parallax-img">
+          <figcaption>Serviço 02</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- O TRAÇO: esboços conceptuais -->
+    <section class="sketch section" id="traco">
+      <div class="container sketch__grid">
+        <aside class="sketch__aside">
+          <div class="sketch__stick">
+            <p class="eyebrow eyebrow--lime reveal">Processo criativo</p>
+            <h2 class="h2 split-lines">Tudo começa<br>num <em class="accent">traço</em>.</h2>
+            <p class="sketch__lead reveal">Antes do 3D e do betão, há uma caneta e uma folha em branco. É no esboço à mão que testamos volumes, luz, vento e percursos, até a ideia estar certa.</p>
+            <ol class="sketch__index reveal" aria-hidden="true">
+              <li><i>01</i>Volumetria</li>
+              <li><i>02</i>Ventilação natural</li>
+              <li><i>03</i>Iluminação natural</li>
+              <li><i>04</i>Estudo de forma</li>
+              <li><i>05</i>Planta esquemática</li>
+            </ol>
+          </div>
+        </aside>
+
+        <ol class="sketch__sheets">
+          <li class="sheet">
+            <button class="sheet__paper" type="button" data-full="assets/esbocos/vol.jpg" aria-label="Ampliar esboço de volumetria">
+              <img src="assets/esbocos/vol.jpg" alt="Esboço a caneta e marcador: estudo de volumetria de uma moradia com volumes em balanço e axonometria explodida" loading="lazy">
+            </button>
+            <div class="sheet__info"><i>01</i><h3>Volumetria</h3><p>Estudamos a massa do edifício (volumes, balanços e relação com o terreno) antes de qualquer detalhe.</p></div>
+          </li>
+          <li class="sheet">
+            <button class="sheet__paper" type="button" data-full="assets/esbocos/ven.jpg" aria-label="Ampliar esboço de ventilação">
+              <img src="assets/esbocos/ven.jpg" alt="Esboço em corte: diagrama de ventilação cruzada e efeito chaminé numa moradia tropical" loading="lazy">
+            </button>
+            <div class="sheet__info"><i>02</i><h3>Ventilação natural</h3><p>Ventilação cruzada e efeito chaminé para casas frescas no clima de Luanda, com menos ar condicionado.</p></div>
+          </li>
+          <li class="sheet">
+            <button class="sheet__paper" type="button" data-full="assets/esbocos/lux.jpg" aria-label="Ampliar esboço de iluminação">
+              <img src="assets/esbocos/lux.jpg" alt="Esboço de estudo solar: percurso do sol, raios de luz e sombras sobre a moradia" loading="lazy">
+            </button>
+            <div class="sheet__info"><i>03</i><h3>Iluminação natural</h3><p>O percurso solar, as sombras e os ângulos de luz definem aberturas, palas e brise-soleil.</p></div>
+          </li>
+          <li class="sheet">
+            <button class="sheet__paper" type="button" data-full="assets/esbocos/for.jpg" aria-label="Ampliar esboço de estudo de forma">
+              <img src="assets/esbocos/for.jpg" alt="Sequência de esboços axonométricos mostrando a evolução da forma da moradia" loading="lazy">
+            </button>
+            <div class="sheet__info"><i>04</i><h3>Estudo de forma</h3><p>Da caixa simples à forma final: subtrair, deslocar, balançar e esculpir.</p></div>
+          </li>
+          <li class="sheet">
+            <button class="sheet__paper" type="button" data-full="assets/esbocos/pla.jpg" aria-label="Ampliar planta esquemática">
+              <img src="assets/esbocos/pla.jpg" alt="Planta esquemática desenhada à mão com zonamento em bolhas e fluxos de circulação" loading="lazy">
+            </button>
+            <div class="sheet__info"><i>05</i><h3>Planta esquemática</h3><p>Zonamento social, íntimo e de serviço, com fluxos claros entre cada espaço.</p></div>
+          </li>
+        </ol>
+      </div>
+      <div class="lightbox" aria-hidden="true"><button class="lightbox__close" type="button" aria-label="Fechar">×</button><img alt=""></div>
+    </section>
+
+    <!-- PROJECTOS (horizontal) -->
+    <section class="projects" id="projectos">
+      <div class="projects__pin">
+        <div class="projects__head">
+          <p class="eyebrow eyebrow--lime">03 — Projectos</p>
+          <h2 class="h2">Espaços que contam<br>a sua história.</h2>
+          <p class="projects__cats">Residencial · Corporativo · Comercial · Hotelaria e lazer</p>
+          <div class="projects__progress"><span></span></div>
+        </div>
+        <div class="projects__track">
+          <a class="proj proj--real" href="#toyota" data-cursor="Ver caso">
+            <div class="proj__img"><img src="assets/toyota/final-recepcao.jpg" alt="Recepção do showroom Toyota com marquise iluminada e balcão branco"><span class="proj__badge"><span class="dot"></span>Obra realizada</span></div>
+            <div class="proj__info"><span>01</span><h3>Showroom Toyota</h3><p>Comercial · CFAO Mobility</p></div>
+          </a>
+          <article class="proj" data-cursor="Ver">
+            <div class="proj__img"><img src="assets/img/hero-moradia-noite.jpg" alt="Moradia contemporânea à noite"></div>
+            <div class="proj__info"><span>02</span><h3>Moradia contemporânea</h3><p>Residencial</p></div>
+          </article>
+          <article class="proj proj--tall" data-cursor="Ver">
+            <div class="proj__img"><img src="assets/img/interior-reuniao.jpg" alt="Sala de reuniões executiva"></div>
+            <div class="proj__info"><span>03</span><h3>Sala de conselho</h3><p>Corporativo · Interiores</p></div>
+          </article>
+          <article class="proj" data-cursor="Ver">
+            <div class="proj__img"><img src="assets/img/corporativo-torre.jpg" alt="Edifício corporativo em vidro e pedra"></div>
+            <div class="proj__info"><span>04</span><h3>Edifício de escritórios</h3><p>Corporativo</p></div>
+          </article>
+          <article class="proj" data-cursor="Ver">
+            <div class="proj__img"><img src="assets/img/interior-sala.jpg" alt="Sala de estar aberta para piscina"></div>
+            <div class="proj__info"><span>05</span><h3>Sala aberta ao jardim</h3><p>Residencial · Interiores</p></div>
+          </article>
+          <article class="proj proj--tall" data-cursor="Ver">
+            <div class="proj__img"><img src="assets/img/interior-cozinha.jpg" alt="Cozinha em mármore negro"></div>
+            <div class="proj__info"><span>06</span><h3>Cozinha em mármore</h3><p>Interiores</p></div>
+          </article>
+          <article class="proj" data-cursor="Ver">
+            <div class="proj__img"><img src="assets/img/condominio-aereo.jpg" alt="Condomínio de moradias junto ao mar"></div>
+            <div class="proj__info"><span>07</span><h3>Condomínio residencial</h3><p>Residencial · Urbanismo</p></div>
+          </article>
+          <div class="proj proj--end">
+            <p>O próximo<br>pode ser <span class="grad">o seu.</span></p>
+            <a href="#contactos" class="btn btn--lime" data-magnetic>Começar agora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASO DE ESTUDO: SHOWROOM TOYOTA (CFAO MOTORS) -->
+    <section class="case section" id="toyota">
+      <div class="container">
+        <div class="case__head">
+          <div>
+            <p class="eyebrow eyebrow--lime reveal"><span class="dot"></span>Caso de estudo · Obra realizada</p>
+            <h2 class="h2 split-lines">Showroom <em class="accent">Toyota</em>.</h2>
+            <p class="section__sub reveal">Projecto e execução da recepção do novo showroom Toyota da CFAO Mobility Angola em Talatona: uma marquise em consola com o logótipo luminoso e um balcão de atendimento com efeito suspenso. Do desenho à chave na mão.</p>
+          </div>
+          <dl class="case__facts reveal">
+            <div><dt>Cliente</dt><dd>CFAO Mobility · Toyota</dd></div>
+            <div><dt>Local</dt><dd>Talatona, Luanda</dd></div>
+            <div><dt>Ano</dt><dd>2026</dd></div>
+            <div><dt>Âmbito</dt><dd>Projecto de arquitectura, licenciamento e execução</dd></div>
+            <div><dt>Equipa</dt><dd>Arq. José Sacuendi · Abedenego Bula</dd></div>
+          </dl>
+        </div>
+
+        <!-- do projecto à obra -->
+        <div class="case__compare">
+          <figure class="case__fig reveal">
+            <button class="zoomable" type="button" data-full="assets/toyota/proj-marquise-render.jpg" aria-label="Ampliar render do projecto">
+              <img src="assets/toyota/proj-marquise-render.jpg" alt="Render do projecto: marquise com logótipo Toyota luminoso sobre o balcão de recepção" loading="lazy">
+            </button>
+            <figcaption><b>Projecto</b> Render 3D apresentado ao cliente</figcaption>
+          </figure>
+          <span class="case__arrow" aria-hidden="true">→</span>
+          <figure class="case__fig reveal">
+            <button class="zoomable" type="button" data-full="assets/toyota/final-recepcao.jpg" aria-label="Ampliar fotografia da obra concluída">
+              <img src="assets/toyota/final-recepcao.jpg" alt="Fotografia da obra concluída: marquise Toyota iluminada e balcão branco com LED" loading="lazy">
+            </button>
+            <figcaption><b>Obra concluída</b> Marquise e balcão executados</figcaption>
+          </figure>
+        </div>
+
+        <!-- separadores -->
+        <div class="case__tabs" role="tablist" aria-label="Galeria do projecto Toyota">
+          <button role="tab" aria-selected="true" aria-controls="tab-final" id="t-final">Resultado final <i>6</i></button>
+          <button role="tab" aria-selected="false" aria-controls="tab-proj" id="t-proj" tabindex="-1">Projecto técnico <i>11</i></button>
+          <button role="tab" aria-selected="false" aria-controls="tab-obra" id="t-obra" tabindex="-1">Em obra <i>9</i></button>
+        </div>
+
+        <div class="case__panel" role="tabpanel" id="tab-final" aria-labelledby="t-final">
+          <div class="gal gal--final">
+            <button class="gal__item gal__item--wide zoomable" type="button" data-full="assets/toyota/final-recepcao.jpg"><img src="assets/toyota/final-recepcao.jpg" alt="Recepção Toyota concluída" loading="lazy"><span>Recepção com marquise iluminada</span></button>
+            <button class="gal__item zoomable" type="button" data-full="assets/toyota/final-balcao-1.jpg"><img src="assets/toyota/final-balcao-1.jpg" alt="Balcão de atendimento no showroom" loading="lazy"><span>Balcão de atendimento</span></button>
+            <button class="gal__item zoomable" type="button" data-full="assets/toyota/final-balcao-2.jpg"><img src="assets/toyota/final-balcao-2.jpg" alt="Topo do balcão com módulo escuro" loading="lazy"><span>Módulo de destaque</span></button>
+            <button class="gal__item zoomable" type="button" data-full="assets/toyota/final-balcao-3.jpg"><img src="assets/toyota/final-balcao-3.jpg" alt="Pormenor do módulo do balcão" loading="lazy"><span>Pormenor do módulo</span></button>
+            <button class="gal__item zoomable" type="button" data-full="assets/toyota/final-salao.jpg"><img src="assets/toyota/final-salao.jpg" alt="Vista do salão com o balcão" loading="lazy"><span>Vista do salão</span></button>
+            <button class="gal__item zoomable" type="button" data-full="assets/toyota/final-pormenor.jpg"><img src="assets/toyota/final-pormenor.jpg" alt="Passa-cabos embutido no tampo do balcão" loading="lazy"><span>Passa-cabos embutido</span></button>
+          </div>
+        </div>
+
+        <div class="case__panel" role="tabpanel" id="tab-proj" aria-labelledby="t-proj" hidden>
+          <div class="case__proj">
+            <div class="case__projtext">
+              <h3>Marquise em consola</h3>
+              <p>Estrutura metálica em consola fixada à viga de betão armado, revestida a pladur, com 6,60 × 1,65 m, 1,40 m de altura e o logótipo luminoso Toyota (4,00 × 1,00 m) a 3,00 m do pavimento.</p>
+            </div>
+            <div class="gal gal--draw">
+              <button class="gal__item gal__item--wide zoomable" type="button" data-full="assets/toyota/proj-marquise-render.jpg"><img src="assets/toyota/proj-marquise-render.jpg" alt="Ilustração da marquise" loading="lazy"><span>00 · Ilustração</span></button>
+              <button class="gal__item zoomable" type="button" data-full="assets/toyota/proj-marquise-planta.jpg"><img src="assets/toyota/proj-marquise-planta.jpg" alt="Planta baixa da marquise, escala 1:50" loading="lazy"><span>01 · Planta baixa</span></button>
+              <button class="gal__item zoomable" type="button" data-full="assets/toyota/proj-marquise-corte-c1.jpg"><img src="assets/toyota/proj-marquise-corte-c1.jpg" alt="Corte C1 da marquise" loading="lazy"><span>02 · Corte C1</span></button>
+              <button class="gal__item zoomable" type="button" data-full="assets/toyota/proj-marquise-corte-c2.jpg"><img src="assets/toyota/proj-marquise-corte-c2.jpg" alt="Corte C2 com logótipo luminoso" loading="lazy"><span>03 · Corte C2</span></button>
+              <button class="gal__item zoomable" type="button" data-full="assets/toyota/proj-marquise-axonometria.jpg"><img src="assets/toyota/proj-marquise-axonometria.jpg" alt="Perspectiva axonométrica da marquise" loading="lazy"><span>04 · Axonometria</span></button>
+              <button class="gal__item zoomable" type="button" data-full="assets/toyota/proj-marquise-estrutura.jpg"><img src="assets/toyota/proj-marquise-estrutura.jpg" alt="Estrutura metálica da marquise" loading="lazy"><span>05 · Estrutura</span></button>
+            </div>
+            <div class="case__projtext">
+              <h3>Balcão de atendimento</h3>
+              <p>Balcão de recepção em MDF lacado branco acetinado, com painel frontal ripado e tampo de bordo recto. A iluminação LED indirecta e a base recuada em acabamento escuro dão-lhe um efeito suspenso. Comprimento total de 6,60 m.</p>
+            </div>
+            <div class="gal gal--draw">
+              <button class="gal__item gal__item--wide zoomable" type="button" data-full="assets/toyota/proj-balcao-02.jpg"><img src="assets/toyota/proj-balcao-02.jpg" alt="Proposta do balcão com renders" loading="lazy"><span>Proposta e renders</span></button>
+              <button class="gal__item zoomable" type="button" data-full="assets/toyota/proj-balcao-01.jpg"><img src="assets/toyota/proj-balcao-01.jpg" alt="Capa da proposta do balcão" loading="lazy"><span>Capa da proposta</span></button>
+              <button class="gal__item zoomable" type="button" data-full="assets/toyota/proj-balcao-03.jpg"><img src="assets/toyota/proj-balcao-03.jpg" alt="Vistas cotadas do balcão" loading="lazy"><span>Vistas cotadas</span></button>
+              <button class="gal__item zoomable" type="button" data-full="assets/toyota/proj-balcao-04.jpg"><img src="assets/toyota/proj-balcao-04.jpg" alt="Pormenor do ripado frontal" loading="lazy"><span>Pormenor do ripado</span></button>
+              <button class="gal__item zoomable" type="button" data-full="assets/toyota/proj-balcao-05.jpg"><img src="assets/toyota/proj-balcao-05.jpg" alt="Modelo 3D do balcão" loading="lazy"><span>Modelo 3D</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="case__panel" role="tabpanel" id="tab-obra" aria-labelledby="t-obra" hidden>
+          <div class="gal gal--obra">
+            <button class="gal__item gal__item--wide zoomable" type="button" data-full="assets/toyota/obra-estrutura.jpg"><img src="assets/toyota/obra-estrutura.jpg" alt="Estrutura metálica da marquise em consola em montagem" loading="lazy"><span>Estrutura metálica em consola</span></button>
+            <button class="gal__item zoomable" type="button" data-full="assets/toyota/obra-equipa.jpg"><img src="assets/toyota/obra-equipa.jpg" alt="Equipa em obra junto à estrutura" loading="lazy"><span>A equipa em obra</span></button>
+            <button class="gal__item zoomable" type="button" data-full="assets/toyota/obra-montagem-balcao.jpg"><img src="assets/toyota/obra-montagem-balcao.jpg" alt="Montagem do balcão" loading="lazy"><span>Montagem do balcão</span></button>
+            <button class="gal__item zoomable" type="button" data-full="assets/toyota/obra-geral.jpg"><img src="assets/toyota/obra-geral.jpg" alt="Vista geral da obra com andaimes" loading="lazy"><span>Vista geral da obra</span></button>
+            <button class="gal__item zoomable" type="button" data-full="assets/toyota/obra-marquise-1.jpg"><img src="assets/toyota/obra-marquise-1.jpg" alt="Marquise revestida a pladur" loading="lazy"><span>Revestimento em pladur</span></button>
+            <button class="gal__item zoomable" type="button" data-full="assets/toyota/obra-marquise-2.jpg"><img src="assets/toyota/obra-marquise-2.jpg" alt="Marquise e balcão em execução" loading="lazy"><span>Marquise e balcão</span></button>
+            <button class="gal__item zoomable" type="button" data-full="assets/toyota/obra-marquise-3.jpg"><img src="assets/toyota/obra-marquise-3.jpg" alt="Acabamento da marquise em andaime" loading="lazy"><span>Acabamentos em altura</span></button>
+            <button class="gal__item zoomable" type="button" data-full="assets/toyota/obra-balcao-1.jpg"><img src="assets/toyota/obra-balcao-1.jpg" alt="Balcão em execução" loading="lazy"><span>Balcão em execução</span></button>
+            <button class="gal__item zoomable" type="button" data-full="assets/toyota/obra-balcao-2.jpg"><img src="assets/toyota/obra-balcao-2.jpg" alt="Balcão protegido durante a obra" loading="lazy"><span>Protecção dos acabamentos</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METODOLOGIA -->
+    <section class="method section" id="metodologia">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">04 — Metodologia</p>
+          <h2 class="h2 split-lines">Como trabalhamos.</h2>
+          <p class="section__sub reveal">Um percurso claro, com pontos de decisão definidos e o cliente informado em cada fase.</p>
+        </div>
+        <div class="steps">
+          <div class="steps__line"><span></span></div>
+          <ol class="steps__list">
+          <li class="step"><i>01</i><h3>Conversa</h3><p>Briefing, ambições, orçamento e prazos.</p></li>
+          <li class="step"><i>02</i><h3>Estudo</h3><p>Levantamento, conceito e estudo prévio.</p></li>
+          <li class="step"><i>03</i><h3>Projecto</h3><p>Execução, especialidades e licenciamento.</p></li>
+          <li class="step"><i>04</i><h3>Obra</h3><p>Empreitada, fiscalização e controlo de custos.</p></li>
+          <li class="step"><i>05</i><h3>Entrega</h3><p>Vistoria, chave na mão e pós-obra.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSÃO, VISÃO E VALORES -->
+    <section class="values section" id="identidade">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow eyebrow--lime reveal">05 — Missão, Visão e Valores</p>
+          <h2 class="h2 split-lines">O que nos <em class="accent">move</em>.</h2>
+        </div>
+
+        <div class="mvv">
+          <article class="mvv__card reveal">
+            <svg class="mvv__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20"/><circle cx="24" cy="24" r="11"/><circle cx="24" cy="24" r="2.5" class="fill"/></svg>
+            <p class="eyebrow">Missão</p>
+            <p class="mvv__text">Projectar e construir espaços de alto padrão em Angola, conjugando inovação, tecnologia e sofisticação com as necessidades reais de cada utilizador. Projecto após projecto, queremos melhorar a qualidade de vida dos angolanos através da Arquitectura, do Urbanismo e da Construção Civil.</p>
+          </article>
+          <article class="mvv__card mvv__card--accent reveal">
+            <svg class="mvv__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M3 24s8-13 21-13 21 13 21 13-8 13-21 13S3 24 3 24z"/><circle cx="24" cy="24" r="6"/></svg>
+            <p class="eyebrow">Visão</p>
+            <p class="mvv__text">Ser uma empresa de arquitectura e construção de referência em Angola, reconhecida por transformar a imagem das cidades angolanas com uma arquitectura cinematográfica, tecnológica e atraente, ao nível dos melhores padrões internacionais.</p>
+          </article>
+        </div>
+
+        <h3 class="values__label reveal">Valores</h3>
+        <div class="values__grid">
+          <article class="value tilt"><i>01</i><h3>Exclusividade</h3><p>Nunca repetimos um projecto. Cada espaço nasce de uma vida diferente.</p></article>
+          <article class="value tilt"><i>02</i><h3>Rigor técnico</h3><p>Prazos, normas e licenciamento tratados com disciplina de engenharia.</p></article>
+          <article class="value tilt"><i>03</i><h3>Inovação</h3><p>Tecnologia e linguagem contemporânea aplicadas ao contexto angolano.</p></article>
+          <article class="value tilt"><i>04</i><h3>Transparência</h3><p>Orçamentos claros e acompanhamento real de obra, sem surpresas.</p></article>
+          <article class="value tilt"><i>05</i><h3>Compromisso</h3><p>Fidelidade absoluta ao que foi idealizado, até à chave na mão.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAL -->
+    <section class="diff section">
+      <div class="container diff__grid">
+        <div>
+          <p class="eyebrow reveal">06 — O que nos distingue</p>
+          <h2 class="diff__title split-lines">Nunca repetimos<br><span class="grad">um projecto.</span></h2>
+          <p class="section__sub reveal">Cada espaço nasce de uma vida diferente, e é essa vida que desenhamos.</p>
+        </div>
+        <div class="diff__list">
+          <div class="diff__item reveal"><h3>À medida da realidade angolana</h3><p>Clima, materiais disponíveis, mão-de-obra local e enquadramento legal.</p></div>
+          <div class="diff__item reveal"><h3>Prazos e normas cumpridos</h3><p>Planeamento realista e conformidade com a regulamentação em vigor.</p></div>
+          <div class="diff__item reveal"><h3>Acompanhamento real de obra</h3><p>Presença técnica no estaleiro, não apenas no papel.</p></div>
+          <div class="diff__item reveal"><h3>Equipa multidisciplinar</h3><p>Arquitectura, engenharia, interiores e gestão de obra sob uma só coordenação.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTES E PARCEIROS
+         Logótipos (PNG transparente ou SVG) em assets/clientes/ e assets/parceiros/.
+         Para acrescentar um, duplique um <li class="client"> e troque o src/alt. -->
+    <section class="partners section" id="parceiros">
+      <div class="container">
+        <div class="partners__head">
+          <div>
+            <p class="eyebrow eyebrow--lime reveal">07 — Clientes e parceiros</p>
+            <h2 class="h2 split-lines">Quem confia<br><em class="accent">em nós</em>.</h2>
+          </div>
+          <p class="section__sub reveal">Empresas que nos confiaram os seus espaços, e os especialistas que partilham o nosso padrão de exigência, do primeiro traço à chave na mão.</p>
+        </div>
+
+        <!-- CLIENTES — logótipos em assets/clientes/. Sem logótipo, mostra-se o nome (troque o <span class="client__name"> por um <img>). -->
+        <h3 class="partners__label reveal">Clientes</h3>
+        <ul class="clients">
+          <li class="client reveal"><img src="assets/clientes/toyota.png" alt="Toyota"></li>
+          <li class="client reveal"><img src="assets/clientes/cfao-mobility.svg" alt="CFAO Mobility Angola"></li>
+          <li class="client reveal"><img src="assets/clientes/imbono.svg" alt="Imbono"></li>
+          <li class="client reveal"><span class="client__name">Santipol</span></li>
+          <li class="client reveal"><img src="assets/clientes/factplus.png" alt="FactPlus"></li>
+        </ul>
+
+        <h3 class="partners__label reveal">Parceiros</h3>
+        <!-- PARCEIROS — logótipos em assets/parceiros/. Para mais um parceiro, duplique um <li>. -->
+        <ul class="clients clients--partners">
+          <li class="client reveal"><img src="assets/parceiros/nkayi-digital.png" alt="Nkayi Digital"></li>
+          <li class="client reveal"><img src="assets/parceiros/sb-pixel.png" alt="SB Pixel"></li>
+        </ul>
+        <div class="partners__cta reveal">
+          <p>Quer ser parceiro da Kreaptus?</p>
+          <a href="mailto:kuendi@outlook.com?subject=Parceria%20Kreaptus" class="btn btn--ghost" data-magnetic>Fale connosco <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contactos">
+      <div class="cta__glow"></div>
+      <div class="container">
+        <p class="eyebrow eyebrow--lime reveal">Próximo passo</p>
+        <h2 class="cta__title split-lines">Comece pela<br><span class="outline">conversa.</span></h2>
+        <p class="cta__sub reveal">A sua obra nasce de uma ideia. A ideia nasce de uma reunião.<br>Marque uma reunião de diagnóstico, sem compromisso.</p>
+        <div class="cta__steps">
+          <div class="reveal"><i>1</i>Reunião de briefing</div>
+          <div class="reveal"><i>2</i>Proposta e honorários</div>
+          <div class="reveal"><i>3</i>Início do projecto</div>
+        </div>
+
+        <div class="contact">
+          <form class="form reveal" id="contactForm">
+            <div class="form__row">
+              <label><span>Nome</span><input name="nome" required autocomplete="name"></label>
+              <label><span>Telefone</span><input name="telefone" type="tel" autocomplete="tel"></label>
+            </div>
+            <label><span>Tipo de projecto</span>
+              <select name="tipo">
+                <option>Residencial</option><option>Corporativo</option><option>Comercial</option><option>Hotelaria e lazer</option><option>Interiores</option><option>Outro</option>
+              </select>
+            </label>
+            <label><span>Conte-nos a sua ideia</span><textarea name="mensagem" rows="4" required></textarea></label>
+            <button class="btn btn--lime btn--full" type="submit" data-magnetic>Enviar pedido de reunião <span class="arrow">→</span></button>
+            <p class="form__note">O envio abre o seu programa de e-mail com a mensagem preenchida.</p>
+          </form>
+
+          <div class="contact__info">
+            <div class="reveal"><span>Telefone</span><a href="tel:+244923215437">+244 923 215 437</a><a href="tel:+244939390399">+244 939 390 399</a></div>
+            <div class="reveal"><span>E-mail</span><a href="mailto:kuendi@outlook.com">kuendi@outlook.com</a></div>
+            <div class="reveal"><span>Instagram</span><a href="https://www.instagram.com/kuendiarquitetura/" target="_blank" rel="noopener">@kuendiarquitetura</a></div>
+            <div class="reveal"><span>Escritório</span><p>Talatona, em frente ao Hotel Palmeira<br>Condomínio Maravilha — Casa 28<br>Luanda, Angola</p></div>
+            <a class="btn btn--ghost reveal" href="https://wa.me/244923215437" target="_blank" rel="noopener" data-magnetic>Falar no WhatsApp <span class="arrow">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__big" aria-hidden="true">Kreaptus</div>
+    <div class="container footer__row">
+      <img src="assets/img/kreaptus-logo-branco.png" alt="Kreaptus" class="footer__logo">
+      <p>Do traço à vida, arquitectura com propósito.</p>
+      <p>© <span id="year">2026</span> Kreaptus Arquitectura &amp; Obras · Luanda, Angola</p>
+      <a href="#topo" class="footer__top" data-magnetic>Topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

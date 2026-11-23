@@ -1,0 +1,3 @@
+Logótipos dos parceiros (PNG transparente ou SVG).
+No index.html, secção CLIENTES E PARCEIROS, duplique um <li class="client"> da lista de parceiros e troque o src/alt.
+Actuais: nkayi-digital.png, sb-pixel.png
